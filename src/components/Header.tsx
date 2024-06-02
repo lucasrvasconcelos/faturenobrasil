@@ -8,7 +8,7 @@ export function Header() {
       </h1>
       <Link
         to={'https://pay.kiwify.com.br/gP6UAEO'}
-        className="uppercase bg-primary px-4 text-background rounded-md font-bold ring-1 hover:ring-primary hover:bg-background hover:text-primary  transition-colors flex justify-center items-center"
+        className="uppercase bg-primary px-4 text-center text-background rounded-md font-bold ring-1 hover:ring-primary hover:bg-background hover:text-primary  transition-colors flex justify-center items-center"
       >
         Quero empreender
       </Link>

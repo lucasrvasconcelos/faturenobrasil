@@ -42,7 +42,7 @@ export function Initial() {
               to={'https://pay.kiwify.com.br/gP6UAEO'}
               className="flex rounded-2xl ring-2 ring-primary overflow-hidden hover:-translate-y-2 transition-[300ms]"
             >
-              <img src={image} alt="" className="w-96 h-96 object-contain" />
+              <img src={image} alt="" className="w-96 h-96 object-cover" />
             </Link>
           </div>
         </section>
@@ -143,7 +143,7 @@ export function Initial() {
         </section>
 
         <section
-          className="px-20 py-14 pt-24 text-slate-900 bg-background flex justify-center flex-wrap items-center gap-24"
+          className="px-8 sm:px-20 py-14 pt-24 text-slate-900 bg-background flex justify-center flex-wrap items-center gap-24"
           id="quiz"
         >
           <div className="max-w-96">
@@ -175,11 +175,13 @@ export function Initial() {
         </section>
 
         <section className="flex justify-center items-center bg-slate-900 py-12  gap-14 sm:gap-8 flex-wrap">
-          <img
-            src={image}
-            alt=""
-            className="w-96 h-96 object-contain rounded-sm"
-          />
+          <div className="px-4">
+            <img
+              src={image}
+              alt=""
+              className="w-96 h-96 object-contain rounded-sm"
+            />
+          </div>
           <div>
             <h3 className="text-4xl font-bold">
               Por apenas
@@ -197,7 +199,7 @@ export function Initial() {
       </main>
 
       <footer className="flex items-center justify-center bg-slate-900 text-primary font-bold">
-        <span className="">
+        <span className=" text-center px-4">
           O sucesso depende da sua atitude de empreender. Dê o primeiro passo!
         </span>
       </footer>
