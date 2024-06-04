@@ -123,7 +123,7 @@ export function Quiz() {
             <div className="flex gap-4">
               <button
                 onClick={restartQuiz}
-                className="mt-8 rounded-sm text-primary ring-1 ring-primary px-2 hover:bg-primary hover:text-background font-bold transition-colors"
+                className="mt-8 select-none rounded-sm text-primary ring-1 ring-primary px-2 hover:bg-primary hover:text-background font-bold transition-colors"
               >
                 Reiniciar Quiz
               </button>
@@ -146,7 +146,7 @@ export function Quiz() {
                 <button
                   key={index}
                   onClick={() => handleAnswer(index)}
-                  className="hover:underline text-left w-fit"
+                  className="hover:underline text-left w-fit select-none"
                 >
                   {option}
                 </button>

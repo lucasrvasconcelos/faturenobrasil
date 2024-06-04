@@ -11,7 +11,7 @@ export function Initial() {
     <>
       <Header />
       <main className="font-poppins text-background">
-        <section className="flex justify-center flex-wrap gap-14 px-10 bg-slate-900 py-44">
+        <section className="flex justify-center flex-wrap gap-14 px-10 bg-slate-900 py-36 sm:py-44">
           <div>
             <h1 className="text-5xl">
               Descubra as estratégias <br />
@@ -24,13 +24,13 @@ export function Initial() {
             <div className="flex">
               <Link
                 to={'https://pay.kiwify.com.br/gP6UAEO'}
-                className="uppercase bg-transparent 1 px-8 py-2 mt-14 w-fit flex text-primary rounded-md font-bold ring-1 ring-primary hover:bg-primary hover:text-background  transition-colors "
+                className="select-none uppercase bg-transparent 1 px-8 py-2 mt-14 w-fit flex text-primary rounded-md font-bold ring-1 ring-primary hover:bg-primary hover:text-background  transition-colors "
               >
                 Quero ter acesso
               </Link>
               <a
                 href="#quiz"
-                className="ml-2 uppercase 1 px-8 py-2 mt-14 w-fit flex rounded-md font-bold ring-1 ring-primary bg-primary text-background  transition-colors hover:opacity-85"
+                className="select-none ml-2 uppercase 1 px-8 py-2 mt-14 w-fit flex rounded-md font-bold ring-1 ring-primary bg-primary text-background  transition-colors hover:opacity-85"
               >
                 Fazer quiz
               </a>
@@ -40,7 +40,7 @@ export function Initial() {
           <div>
             <Link
               to={'https://pay.kiwify.com.br/gP6UAEO'}
-              className="flex rounded-2xl ring-2 ring-primary overflow-hidden hover:-translate-y-2 transition-[300ms]"
+              className="flex rounded-2xl select-none ring-2 ring-primary overflow-hidden hover:-translate-y-2 transition-[300ms]"
             >
               <img src={image} alt="" className="w-96 h-96 object-cover" />
             </Link>
@@ -190,7 +190,7 @@ export function Initial() {
             <p className="text-primary">Ou R$27,00 a vista</p>
             <Link
               to={'https://pay.kiwify.com.br/gP6UAEO'}
-              className="uppercase bg-transparent 1 px-8 py-2 mt-14 w-fit flex text-primary rounded-md font-bold ring-1 ring-primary hover:bg-primary hover:text-background  transition-colors "
+              className="select-none uppercase bg-transparent 1 px-8 py-2 mt-14 w-fit flex text-primary rounded-md font-bold ring-1 ring-primary hover:bg-primary hover:text-background  transition-colors "
             >
               Comprar agora
             </Link>
@@ -198,10 +198,8 @@ export function Initial() {
         </section>
       </main>
 
-      <footer className="flex items-center justify-center bg-slate-900 text-primary font-bold">
-        <span className=" text-center px-4">
-          O sucesso depende da sua atitude de empreender. Dê o primeiro passo!
-        </span>
+      <footer className="flex items-center justify-center bg-primary text-slate-900 font-bold ring-primary ring-1 py-3">
+        <span className=" text-center px-4 text-sm">Dê o primeiro passo!</span>
       </footer>
     </>
   )
